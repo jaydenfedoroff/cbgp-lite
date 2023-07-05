@@ -23,8 +23,8 @@
    :population-size      1000
    :max-generations      300
    :umad-rate            0.1
-   :min-genome-size      50
-   :max-genome-size      250
+   :min-genome-size      (* 8/5 50)
+   :max-genome-size      (* 8/5 250)
    :penalty              1e6
    :simplification-steps 2000
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

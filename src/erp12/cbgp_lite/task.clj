@@ -32,7 +32,7 @@
    :lit           0.2
    :lit-generator 0.1
    :apply         (case @compile/app-type
-                    :original 0.2
+                    :original 0.8
                     :dna 0.025
                     :all 0
                     :baked-in 0.025
