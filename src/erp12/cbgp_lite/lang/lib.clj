@@ -812,7 +812,5 @@
 (defn lib-for-types
   [types]
   (->> type-env
-       (filter (fn [[_ typ]]
-                 (core/or (= (:type typ) :scheme)
-                          (some #(schema/occurs? % typ) types))))
+       (filter (partial schema/has-all-ground-types? types))
        (into {})))
